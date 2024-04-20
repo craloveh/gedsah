@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>GEDSA LCC</title>
+		<meta charset="utf-8"/>
+		<link rel="Stylesheet" type="text/css" href="mystyle/styles.css"/>
+		<link rel="Stylesheet" type="text/css" href="mystyle/grid.css"/>
+		<link rel="Stylesheet" type="text/css" href="mystyle/men.css"/>
+		<link rel="Stylesheet" type="text/css" href="mystyle/myslide.css"/>
+		
+		<link rel="Stylesheet" type="text/css" href="mystyle/gallery.css"/>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+		<script defer src="mystyle/counter.js"></script>
+			<script defer src="mystyle/myslide.js"></script>
+    <link rel="stylesheet" href="mystyle/counter.css" />
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+</style>
+	
+	</head>
+	
+	<body>
+	<!-- My page contener  -->
+		<div id="contener">
+		<!-- Header have my title progress bar -->
+				<header>
+						
+						<div id="header_image">
+							
+							
+							
+							
+							
+						</div>  
+						
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"></div>
+				</header>
+				
+				<nav>
+				
+				<div class="topnav" id="myTopnav">
+				<a class="active" href="#home">Home</a>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact</a>
+  
+  <a href="javascript:void(0);" class="icon" onclick="myFunctionn()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+			
+
+
+				
+				</nav>
+				<section>
+						
+		 
+		 <article>
+		<br><br><br><br>
+		 <div class="responsive">
+  <div class="gallery">
+   <!-- <a target="_blank" href="images/gallery/picture_1.jpg">
+      <img src="images/gallery/picture_1.jpg" alt="Cinque Terre">
+    </a> -->
+		<h1><center>Pictures<enter></h1>
+<div class="zoom">
+	<div id="header_about">
+	</div>
+</div>
+
+
+
+    
+  </div>
+</div>
+
+<div class="responsive">
+ <div class="gallery">
+  <!-- <a target="_blank" href="images/gallery/picture_1.jpg">
+      <img src="images/gallery/picture_1.jpg" alt="Cinque Terre">
+    </a> -->
+	<h1>Vision</h1>
+	<p>The artists Anne and Annie are two young children who use drawing as a passion. Every day, she draws at least one design. They speak French, Creole and English and they have a beginner level in Spanish.
+Art. Annie, who is her sister's drawing teacher, encourages all the children around her to practice drawing.
+
+Other than art drawing. Annie also practices music, she plays the violin and a flute. She also has a passion for manufacturing, where she uses used objects for recyclers.
+</p>
+    <div class="desc">Add a description of the image here</div> 
+  </div>
+</div>
+
+
+
+<div class="clearfix"></div>
+	
+						 
+					 
+		 </article>
+		
+			
+				</section>
+				
+				<footer>
+			<center> <p>	<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a><p>
+			
+						<font color="white"> <center> Copyright 04/2024 	 </font>	</center>
+				</footer>
+				
+	</div>
+	
+
+	<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+	
+	
+	
+	<script type="text/javascript" >
+	
+
+function myFunctionn() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+	
+	
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+
+
+</script>
+
+	<body>
+</html>
