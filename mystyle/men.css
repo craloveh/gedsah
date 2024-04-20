@@ -9,12 +9,8 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color:SteelBlue ;
-  background-image: url("../images/IMAGE_4.jpg");
-	background-repeat:border-radius:12px;
-	background-position: center;
-	background-repeat: no-repeat;
- background-size: 100% 100%;
+  background-color:#CCEEFF ;
+  
   /* #333*     #f2f2f2 */
 }
 
